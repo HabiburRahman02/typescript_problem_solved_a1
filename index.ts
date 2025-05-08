@@ -17,11 +17,6 @@ interface Items {
 function filterByRating(items: Items[]): Items[] {
     return items.filter(item => item.rating >= 4)
 }
-const books = [
-    { title: "Book A", rating: 4.5 },
-    { title: "Book B", rating: 3.2 },
-    { title: "Book C", rating: 5.0 }
-];
 
 
 
@@ -77,12 +72,6 @@ function getMostExpensiveProduct(products: Product[]) {
         return product.price > max.price ? product : max;
     });
 }
-
-const products = [
-    { name: "Pen", price: 10 },
-    { name: "Notebook", price: 25 },
-    { name: "Bag", price: 50 }
-];
 
 
 
